@@ -1,0 +1,158 @@
+:root{
+    --rich-black: #000814ff;
+}
+
+body {
+    font-family: "Jacquard 24", serif;
+    background-color: var(--rich-black);
+    color: white;
+}
+
+
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+section {
+    --main-bg-color: brown;
+  }
+
+hr{
+    color: white;
+}
+
+#section1 {
+    margin-right: 250px;
+    padding-top: 100px;
+    border-style: dotted;
+    border-width: 10px 4px 8px 12px;
+    text-decoration: underline;
+}
+
+#section2 {
+    margin: 0px 0px 0px 100px;
+    padding: 100px 0px 0px 0px;
+    border: solid;
+    border-color: blueviolet;
+    border-radius: 30px;
+}
+
+
+#catimg {
+    display: block;
+    border: solid;
+    width: 1000px;
+    height: 600px;
+    position:static;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#catimg:hover{
+    color:blue;
+}
+#tempimg{
+    width: 1350px;
+    position:relative;
+}
+
+#tempimg:active{
+    box-shadow: 100px 100px 500px #fc894d;
+}
+
+
+.container {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    height: 200px;
+    background-color:yellow; 
+  }
+  
+  .item {
+    width: 100px; 
+    height: 100px; 
+    background-color: green;
+    text-align: center;
+    line-height: 100px;
+  }
+
+  .gridcontainer {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px; 
+    padding-left: 200px;
+    
+  }
+  
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%; /* Full width */
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 90%; 
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    .container {
+        width: 80%; 
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: blue;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+}
+
+a:hover {
+    color: red;
+}
+
+h1, p {
+    text-align: center;
+}
+
+#container p {
+    font-style: italic;
+}
+
+#container > p {
+    font-weight: bold;
+}
+.special ~ p {
+    background-color: yellow;
+}
+
+a + input {
+    margin-top: 10px;
+}
+
+p.special {
+    font-size: 18px;
+}
+
+p:has(.special) {
+    color: green;
+}
+
+p a {
+    text-decoration: none;
+}
